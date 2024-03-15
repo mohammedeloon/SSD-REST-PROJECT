@@ -45,7 +45,7 @@ class webproductController extends Controller
             'price' => 'required|numeric',
             'quantity' => 'nullable|integer',
             'is_active' => 'nullable|boolean',
-            // 'seller_id' => 'required|exists:users,id'
+            'seller_id' => 'required|exists:users,id'
         ]);
         $product->update($validated);
 
